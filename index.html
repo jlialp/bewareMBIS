@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beware MBIS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1 class="site-title">How does Merriton British International School Hurt Children?</h1>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">☰</button>
+        <nav id="main-nav" class="main-nav" role="navigation">
+            <!-- Links for every section (added at the beginning) -->
+            <a href="#Lies To Parents">Lies To Parents</a>
+            <a href="#Children Exposed to Pornography">Children Exposed to Pornography</a>
+            <a href="#Racism Against Students at Merriton">Racism Against Students at Merriton</a>
+            <a href="#abandoned-field-trips">Children Abandoned on Field Trips</a>
+            <a href="#failure-to-inform">Failure to Inform</a>
+            <a href="#abusive-environment">Abusive Environment</a>
+            <a href="#failure-to-provide-materials">Failure to Provide Materials</a>
+            <a href="#children-unsafe">Children Unsafe</a>
+            <a href="#hiring-unqualified">Hiring Unqualified Teachers</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        
+        <section id="Lies To Parents">
+            <h2>Lies To Parents</h2>
+            <p>Teachers are instructed to mislead parents about their child's academics.</p>
+            <a href="image 1.png" class="lightbox-link">
+                <img src="image 1.png" alt="Teachers describing the lies on class reports to parents." class="responsive thumb-medium">
+            </a>
+        </section>
+        <section id="Children Exposed to Pornography">
+            <h2>Children Exposed to Pornography</h2>
+            <figure>
+                <a href="pornog.png" class="lightbox-link"><img src="pornog.png" alt="Evidence of children exposed to pornography" class="responsive thumb-large"></a>
+                <figcaption>Caregivers discussing the incident regarding child exposure to pornography; meanwhile due to carelessness, children were forwarded the pornography conversation multiple times.</figcaption>
+            </figure>
+        </section>
+                <section id="Racism Against Students at Merriton">
+            <h2>Racism Against Students at Merriton</h2>
+            <p>Accounts and reports of discriminatory behavior toward students at Merriton are collected here.</p>
+                    <figure>
+                        <a href="racism.png" class="lightbox-link"><img src="racism.png" alt="Racism evidence" class="responsive thumb-large"></a>
+                        <figcaption>Principal Paul Hammond aware of racism against students common place yet refuses to act. Principal Paul Hammond discriminates against new hires based on race.</figcaption>
+                    </figure>
+        </section>
+        <section id="abandoned-field-trips">
+            <h2>Children Abandoned on Field Trips</h2>
+            <p>Reports and evidence of children being left behind or abandoned during school outings.</p>
+            <figure>
+                <a href="Screenshot_20251108-183800_WhatsApp.jpg" class="lightbox-link">
+                    <img src="Screenshot_20251108-183800_WhatsApp.jpg" alt="Screenshot showing incident on a field trip" class="responsive thumb-large">
+                </a>
+                <figcaption>Compare the date requesting the new start date to the date of Merriton summer school. The new hire was requested because a student was left behind on a field trip of the previous teacher, who was fired. Merriton consistently lacks safety procedures that ensure the safety of children.</figcaption>
+            </figure>
+        </section>
+        <section id="failure-to-inform">
+            <h2>Failure to Inform Authorities Regarding Child Abuse</h2>
+            <p>On March 25th 2025 Paul Hammond told teaching staff that a teacher had been accused of physically assaulting a student and that the relevant CCTV video was given to the police. This legal investigation proves that Paul Hammond's statement were false. The supposed accusation was made on 20 March 2025 and Paul Hammond allowed this teacher to continue teaching for a full three days afterward. He was not relieved of duties until after classes on Friday, further endangering children.</p>
+            <figure class="two-up">
+                <a href="Screenshot_20251016-131602_LINE.jpg" class="lightbox-link"><img src="Screenshot_20251016-131602_LINE.jpg" alt="Screenshot 1 related to failure to inform" class="responsive thumb-small"></a>
+                <a href="Screenshot_20251016-131616_LINE.jpg" class="lightbox-link"><img src="Screenshot_20251016-131616_LINE.jpg" alt="Screenshot 2 related to failure to inform" class="responsive thumb-small"></a>
+                <a href="S__1818728.jpg" class="lightbox-link"><img src="S__1818728.jpg" alt="Additional evidence screenshot" class="responsive thumb-small"></a>
+                <a href="Screenshot_20251109-153616_Gmail.jpg" class="lightbox-link"><img src="Screenshot_20251109-153616_Gmail.jpg" alt="Gmail screenshot related to incident" class="responsive thumb-small"></a>
+                <figcaption>Evidence screenshots related to the incident.</figcaption>
+            </figure>
+        </section>
+        <script>
+        // Simple lightbox
+        document.addEventListener('click', function(e){
+            const a = e.target.closest('.lightbox-link');
+            if(!a) return;
+            e.preventDefault();
+            const src = a.getAttribute('href');
+            const overlay = document.createElement('div');
+            overlay.className = 'lb-overlay';
+            const img = document.createElement('img'); img.src = src; img.alt = '';
+            const btn = document.createElement('button'); btn.className = 'lb-close'; btn.innerHTML = '&times;';
+            overlay.appendChild(img); overlay.appendChild(btn);
+            document.body.appendChild(overlay);
+            function remove(){ overlay.remove(); document.removeEventListener('keydown', onKey); }
+            btn.addEventListener('click', remove);
+            overlay.addEventListener('click', function(ev){ if(ev.target === overlay) remove(); });
+            function onKey(ev){ if(ev.key === 'Escape') remove(); }
+            document.addEventListener('keydown', onKey);
+        });
+        </script>
+        <section id="abusive-environment">
+            <h2>Abusive Environment</h2>
+            <p>Reports and testimonials indicating an abusive environment at the school.</p>
+            <a href="abusive environment.png" class="lightbox-link">
+                <img src="abusive environment.png" alt="Abusive environment evidence" class="responsive thumb-large">
+            </a>
+            <p>Further evidence of failure to provide education materials is listed below.</p>
+            <p>The Principal, Paul Hammond, was accused by a teacher — with many witnesses — of physical assault.</p>
+        </section>
+
+        <section id="failure-to-provide-materials">
+            <h2>Failure to Provide Education Materials</h2>
+            <p>The school has failed to supply adequate textbooks and learning materials in multiple classes.</p>
+            <div class="materials-gallery">
+                <a href="book1.png" class="lightbox-link"><img src="book1.png" alt="Book 1" class="responsive thumb-small"></a>
+                <a href="books 2.png" class="lightbox-link"><img src="books 2.png" alt="Books 2" class="responsive thumb-small"></a>
+                <a href="books 3.png" class="lightbox-link"><img src="books 3.png" alt="Books 3" class="responsive thumb-small"></a>
+            </div>
+        </section>
+
+        <section id="children-unsafe">
+            <h2>Children Unsafe</h2>
+            <p>On February 20th 2025 a five year old child was accepted into the campus and allowed onto the playground. This child fell and required hospitalization. For five minutes he was unattended, crying on the playground. Due to the negligence of Merriton and its principal Paul Hammond.</p>
+        </section>
+
+        <section id="hiring-unqualified">
+            <h2>Hiring Unqualified Teachers</h2>
+            <p>Many teachers, especially early childhood teachers, are teaching without any teaching qualifications (a teaching license for American, or QTS for British.) Ask.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 BewareMBIS</p>
+    </footer>
+    <script>
+    // Mobile nav toggle
+    (function(){
+        const btn = document.querySelector('.nav-toggle');
+        const nav = document.getElementById('main-nav');
+        if(!btn || !nav) return;
+        btn.addEventListener('click', function(){
+            const shown = nav.classList.toggle('show');
+            btn.setAttribute('aria-expanded', shown ? 'true' : 'false');
+        });
+    })();
+    </script>
+</body>
+</html>
